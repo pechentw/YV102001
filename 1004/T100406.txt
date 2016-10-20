@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package t100401;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author yvtc
+ */
+public class T100406 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int qa, qb, ans, i;
+        Scanner scanner = new Scanner(System.in);
+        
+        for (i = 1; i<=5; i++)
+        {
+            qa = (int) (Math.random() * 10);
+            qb = (int) (Math.random() * 10);
+
+            System.out.print(qa + "+" + qb + "=");
+            ans = Integer.valueOf(scanner.next());
+            if (ans == qa + qb)
+            {
+                System.out.println("µª¹ï¤F");
+            }
+            else
+            {
+                System.out.println("µª¿ù¤F");
+            }
+        }
+
+        
+    }
+    
+}

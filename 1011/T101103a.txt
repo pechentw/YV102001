@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package t101101;
+
+/**
+ *
+ * @author yvtc
+ */
+public class T101103 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Student mystu = new Student("Bob", "1234");
+        System.out.println(mystu);
+    }
+}
+
+class Student
+{
+    String name;
+    String tel;
+    int score;
+    
+    public Student(String n, String t)
+    {
+        this.name = n;
+        this.tel = t;
+    }
+    
+    public String toString()
+    {
+        return this.name + "," + this.tel + ":" + this.score;
+    }
+}

@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package t100601;
+
+import java.util.Arrays;
+
+/**
+ *
+ * @author yvtc
+ */
+public class T100604 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+      Dog mypet = new Dog();
+    mypet.age = 55;
+     System.out.println(mypet.age );  
+     mypet.bark() ;
+    Dog yourpet = mypet;
+    System.out.println(yourpet.age ); 
+}
+
+    
+}
+class Dog 
+{
+     int age;
+     void bark()
+     {
+        System.out.println("woof!! woof!!" );  
+     }
+}

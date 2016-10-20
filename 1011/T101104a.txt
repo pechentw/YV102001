@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package t101101;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author yvtc
+ */
+public class T101104 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        ArrayList<Student> mylist = new ArrayList();
+        Student mystu = new Student("Bob", "1234");
+        mystu.score = 95;
+        mylist.add(mystu);
+        
+        Student mystu2 = new Student("Mary", "3456");
+        mystu2.score = 90;
+        mylist.add(mystu2);
+              
+        Student mystu3 = new Student("John", "5556");
+        mystu3.score = 97;
+        mylist.add(mystu3);
+        
+        for (Student s : mylist)
+        {
+            System.out.println(s.name);
+        }
+        System.out.println("==========");
+        for (Student s : mylist)
+        {
+            System.out.println(s);
+        }
+    }
+    
+}

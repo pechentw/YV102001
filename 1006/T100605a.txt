@@ -1,0 +1,53 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package t100601;
+
+/**
+ *
+ * @author yvtc
+ */
+public class T100605 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Dog mypet = new Dog();
+        mypet.age = 5;
+        System.out.println(mypet.age);
+        mypet.bark();
+        
+        Dog yourpet = mypet;
+        System.out.println(yourpet.age);
+        int a = mypet.add(5, 3);
+        System.out.println(a);
+        mypet.f();
+        mypet.bark(4);
+    }
+    
+}
+
+class Dog
+{
+    int age;
+    void bark()
+    {
+        System.out.println("Woof!! Woof!!");
+    }
+    int add(int a, int b)
+    {
+        return a + b;
+    }
+    void f()
+    {
+        System.out.println("Test Test!!");
+    }
+    void bark(int a)
+    {
+        System.out.println("¦³¼Æ¦rªºWoof!! Woof!!");
+    }
+}
